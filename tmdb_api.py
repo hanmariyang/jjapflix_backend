@@ -4,6 +4,8 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'jjapflix.settings')
 import django
 django.setup()
 
+import dotenv
+
 import requests
 
 from articles.models import Category, Movie
