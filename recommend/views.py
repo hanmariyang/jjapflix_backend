@@ -6,8 +6,8 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.views import APIView
 
-trends = pd.read_csv('recommend/trend.csv')
-netflix = pd.read_csv('recommend/netflix.csv')
+trends = pd.read_csv('trend.csv')
+netflix = pd.read_csv('netflix.csv')
 
 movie_ratings = pd.merge(trends, netflix, on='movie_id')
 
