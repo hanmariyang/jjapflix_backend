@@ -1,10 +1,10 @@
 import os
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'jjapflix.settings')
-
+import dotenv
+dotenv.read_dotenv()
 import django
 django.setup()
 
-import dotenv
 
 import requests
 
@@ -16,7 +16,8 @@ import json
 lang = 'ko-KR'
 page = 1
 region = 'KR'
-apikey = ''
+apikey = '92cc157f474166ebd92c78636aa052a4'
+
 
 genre_url = f'https://api.themoviedb.org/3/genre/movie/list?api_key={apikey}&language={lang}'
 genre_response = requests.get(genre_url).json().get('genres')
@@ -47,3 +48,6 @@ for i in range(1,11):
 
         for cate in name['genre_ids']:
             movie.category.add(cate)
+
+
+
