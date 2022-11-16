@@ -28,12 +28,3 @@ class LoginUserTest(APITestCase):
         response = self.client.post(reverse('rest_login'), self.data)
         self.assertEqual(response.status_code, 200)
     
-    # def test_get_user_data(self): # 유저정보 조회 테스트
-    #     access_token = self.client.post(reverse('token_obtain_pair'), self.data).data['access']   ## 엑세스 토큰을 받아옴
-    #     response = self.client.get(
-    #         path=reverse("user_view"),
-    #         HTTP_AUTHORIZATION=f"Bearer {access_token}"
-    #     )
-    #     # print(response.data)
-    #     # self.assertEqual(response.status_code, 200)
-    #     self.assertEqual(response.data['username'], self.data['username'])
