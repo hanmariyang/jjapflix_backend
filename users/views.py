@@ -10,7 +10,7 @@ from allauth.account.models import EmailConfirmation, EmailConfirmationHMAC
 from users.serializers import UserProfileSerializer, UserUpdateSerializer
 
 
-class UserView(APIView):
+class UserDeleteView(APIView):
      
     def delete(self, request): # 회원탈퇴
         if request.user.is_authenticated:

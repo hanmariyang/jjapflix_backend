@@ -1,129 +1,134 @@
-#B1팀 팀프로젝트 (넷플릭스 클론코딩)
+# Jjapflix (넷플릭스 클론코딩 기반 영화 추천 서비스)
 
-## 프로젝트 이름
+## 프로젝트
 
-### 짭플릭스
 
-## 프로젝트 소개
+### Jjapflix
 
-### 넷플릭스 클론코딩, 사용자의 취향에 맞춰서 영화 추천
+시연 영상 :
 
-## 팀 이름
+[https://www.youtube.com/watch?v=CdffUWraIU8/](https://www.youtube.com/watch?v=CdffUWraIU8/)
 
-### 싸지방
+프로젝트 일정 : 2022.11.02 ~ 2022.11.08
 
-## 팀원 소개
+프론트엔드 Repository : [https://github.com/devjunseok/jjapflix_frontend](https://github.com/devjunseok/jjapflix_frontend)
 
-박준석 
+백엔드  Repository :[https://github.com/devjunseok/jjapflix_backend](https://github.com/devjunseok/jjapflix_backend)
 
-[devjunseok - Overview](https://github.com/devjunseok)
+S.A 링크 : [B-1팀 영화추천서비스](https://iodized-justice-c7c.notion.site/B1-90233db02b124d57a2e82318b93e2074)
 
-노우석 
+## 1. 프로젝트 주제
 
-[WooSeok-Nho - Overview](https://github.com/WooSeok-Nho/)
+### 넷플릭스 클론코딩을 기반으로 한 사용자 Needs에 맞는 영화 추천 서비스
 
-성창남 
+나에게 맞는 영화를 추천받고, 영화 정보를 공유하는 사이트
 
-[SungChangNam - Overview](https://github.com/SungChangNam)
+## 2. 기술 스택
 
-양기철 
+- 백엔드
+    - Python 3.10
+    - Django 4.1.3
+    - Django Rest Framework 3.14
+    - Django Rest Framework simple-jwt 5.2.2
+- 프론트엔드
+    - HTML5
+    - Javascript
+    - JQuery
+    - CSS
 
-[hanmariyang - Overview](https://github.com/hanmariyang)
+## 3. 싸지방 팀 팀원 및 역할
 
-이태겸 
+### 박준석 - [devjunseok - Overview](https://github.com/devjunseok)
 
-[poro625 - Overview](https://github.com/poro625)
+팀장 / 프로젝트 기획 / tbdm 데이터 크롤링 / user 기능/ DB 모델링 / 머신러닝, 딥러닝 코드 작성
 
-## 개발 역할 분담
+### 노우석 - [WooSeok-Nho - Overview](https://github.com/WooSeok-Nho/)
 
-### 프론트엔드 - 양기철 성창남
+팀원 / 프로젝트 기획 / user기능 / 날씨추천기능 / 포인트적립기능 / FrontEnd 제작,API연결
 
-### 최상위 템플릿
+### 성창남 - [SungChangNam - Overview](https://github.com/SungChangNam)
 
-- [ ]  home.html (영화 목록, 영화 클릭하면 영화 상세 페이지로 이동(모달로 처리))
-- [ ]  base.html (위에 navbar, 검색창, 글쓰기버튼, 홈버튼, 알림, 베이스 html)
-- [ ]  footer.html (하단에 팀 소개)
+팀원 / 프로젝트 기획 / communities 기능/ DB 모델링 / FrontEnd 제작,API연결
 
-### users 템플릿
+### 양기철 - [hanmariyang - Overview](https://github.com/hanmariyang)
 
-- [ ]  login.html (로그인페이지)
-- [ ]  signup.html (회원가입페이지)
-- [ ]  profile_edit.html (회원정보 수정 페이지)
-- [ ]  profile_edit_password.html(비밀번호 수정 페이지)
-- [ ]  follow.html (회원정보 읽기, 팔로우,팔로워 페이지)
+팀원 / 프로젝트 기획 / products, recommend 기능 / 상품정보 크롤링 / DB모델링 / 추천 서비스 기능 / FrontEnd 템플릿 제작 및 API연결
 
-### contents 템플릿
+### 이태겸 - [poro625 - Overview](https://github.com/poro625)
 
-- [ ]  upload.html (리뷰 업로드)
-- [ ]  update.html (게시글 수정 페이지)
-- [ ]  search.html (검색페이지)
-- [ ]  recommend.html(추천 페이지)
+팀원 / 프로젝트 기획 / communites 기능, products 기능, weather 기능/크롤링/ DB 모델링 /태그 기능/ 검색 기능/상세보기 수정 및 삭제
 
-### JavaScript
+## 4. 프로젝트 기능
 
-### 백엔드 - 팀원 모두
+### User 기능(회원가입/로그인 - simple jwt 사용)
 
-- 로그인 기능(users) - 박준석, 이태겸,
-    - [ ]  회원가입 (email, 이름,비밀번호)
-    - [ ]  로그인
-    - [ ]  로그아웃
-    - [ ]  내 프로필 편집(비밀번호 변경, 이메일 변경)
-    - [ ]  회원탈퇴
-    - [ ]  마이페이지
-- 게시글 기능(contents) - 노우석, 양기철, 성창남
-    - [ ]  리뷰삭제(본인의 글만)
-    - [ ]  리뷰올리기+ 리뷰 수정(본인의 글만)
-    - [ ]  좋아요
-    - [ ]  검색
-    - [ ]  영화 찜하기(ManyToMany Field 사용)
-- 자동 장르 분류
-    
-    [The Movie Database API (themoviedb.org)](https://developers.themoviedb.org/3/configuration/get-api-configuration) API 사용
-    
-- 영상 추천 서비스 - 박준석, 이태겸, 노우석
-    - [ ]  넷플릭스 데이터 크롤링
-    - [ ]  영상 추천
-- 추가로 시도해 볼 기능들
-    - [ ]  팔로우, 팔로워
-    - [ ]  태그
-    - [ ]  별점
-    - [ ]  이메일인증
-    - [ ]  소셜로그인
-    - [ ]  알림
+- dj-rest-auth 이용 회원가입, 로그인 기능 구현 (이메일 인증 포함)
+- extra_kwargs 처리로 에러 메세지 세분화 처리
+- 회원정보 CRUD 기능
+- 팔로우, 팔로워
 
-## 개발 일정
+### articles 기능 (게시글, 댓글, 사물인식, 유화제작)
 
-- 11-02 (SA 작성 및 프로젝트 세팅)
-- 11-03 (백엔드 API 구현)
-- 11-04 (프론트-머신러닝 시작)
-- 11-05 (프론트 - 머신러닝 구현)
-- 11-06 (프론트 - 머신러닝 구현)
-- 11-07 (프로젝트 마무리)
-- 11-08 (발표 및 발표준비)
-- 주말에는 계획된 일정 제외하고 남는 시간은 프로젝트 참여하기
+- 영화 후기 CRUD 기능
+- 영화 검색 기능
 
-## 사용하는 기술
+### recommend 기능 (영화 추천)
 
-- python (3.10.7)
-- Django (4.1.1)
-- HTML
-- css
-- JavaScript
-- sqlite
-- git
-- yolov5
-- PyTorch
+- tmdb 데이터, 사용자 영화 선호 데이터를 기반으로 아이템 협업 필터링 사용하여 사용자에게 영화 추천
+- tmdb_api.py에 크롤링 코드 작성, 크롤링하여 db에 저장
 
-## 와이어프레임
+ 
+## 4-1. 트러블 슈팅
 
-[https://www.figma.com/file/wsYCpFHXM7p0kYlyA5zzds/Jjapflix?node-id=0%3A1](https://www.figma.com/file/wsYCpFHXM7p0kYlyA5zzds/Jjapflix?node-id=0%3A1)
+### 박준석
 
-![image.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/52dcda2d-3527-4da0-ac5d-bb06ee2dc624/image.png)
+**문제 : 아이템 기반 협업 필터링으로 추천받은 영화를 DB에 접근해서 가져오지 못하는 상황 발생**
 
-## DB erd
+**원인 : 협업 필터링은 단순히 csv파일을 기준으로 영화를 추천해주기 때문에 db에 있는 영화와 연동을 하지 못하는 것이 원인**
 
-![20221102_234014.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4476258f-2a29-42ae-bd13-eb9c94948be4/20221102_234014.png)
+**해결 : 리스트 축약식을 사용하여 추천된 영화를 장고 ORM에 적용하여 db에서 추출하여 해결 (recommend/views.py/TasteView)** 
 
-## API 명세서
 
-[프로젝트 API 설계하기](https://www.notion.so/cc193929825143c287af74705b5a5421)
+### 양기철
+
+**문제 : Serializer를 사용하지않고 ManyToMany 필드를 사용하는 대량 DB 저장시 각 필드끼리 연결되지 않는 문제 발생**
+
+**원인 : 크롤링한 외부 데이터를 가져와서 DB에 저장시키려다보니 각각 알맞는 필드를 연결시키지 못함**
+
+**해결 : ManyToMany 필드에 맞는 로직으로 저장하여 해결**
+### 노우석
+
+**문제 : 출석버튼을 눌렀을 때 db에 저장되어 있는 point가 증가하게 설계해놓았다.**
+
+**다만 코드 로직 자체를 하루에 한번 포인트가 증가하게 할 수 있게 datetime.today()와 버튼을 클릭했을 때의 현재 날짜를 저장하는 click_time의 값을 비교해서 값이 같으면 기능이 작동하지 않게 작성해놓았는데 제대로 작동하지 않는 상황 발생**
+
+**해결 : 두개의 값이 완전히 같게 보여도 타입이 달랐기 때문에 타입을 모델에서 변경해주어 같게 만들어주었더니 해결.**
+
+### 이태겸
+
+**문제 : 태그 기능을 게시글에 작성 시 여러개를 저장하더라도 각각 DB에 저장이 되도록 해야 하는데 각각 저장이 되지 않는 상황 발생**
+
+**원인 : 원인은 Serializer 사용 시 ManyToMany 관계를 의식하지 않고 태그 기능을 구현하였기 때문에 생긴 현상.**
+
+**해결 :ManyToMany 관계 Serializer를 사용하여 기존 Serializer를 수정 보완하여서 해결**
+
+### 성창남
+
+**문제 : 연동 하여 관리자가 신고 게시글 삭제 기능 구현 할 때 백엔드 정보가 프로트엔드에 구현되지 않은 오류가 발생 하는 문제가 발생. 처음에는 await fetch 만 사용 하여 원치않는 정보도 같이 들어와서 오류 발생.**
+
+**해결 : 이중 반복문 을 활용하여 해결.**
+
+
+## 5. 와이어프레임
+
+[https://www.figma.com/file/hgtTToRaWbfP87GfNvHaMa/Off_the_Outfit?node-id=0%3A1&t=xw7FNe87Jr8IecaC-1](https://www.figma.com/file/hgtTToRaWbfP87GfNvHaMa/Off_the_Outfit?node-id=0%3A1&t=xw7FNe87Jr8IecaC-1)
+
+![https://user-images.githubusercontent.com/111295065/207312359-91bb78a9-c108-4897-8cc3-e0cbb1f00cd0.png](https://user-images.githubusercontent.com/111295065/207312359-91bb78a9-c108-4897-8cc3-e0cbb1f00cd0.png)
+
+## 6. API 명세서
+
+[off_the_outfit (getpostman.com)](https://documenter.getpostman.com/view/24913558/2s8YzWRfo4)
+
+## 7. DB 설계 ERD
+
+![https://user-images.githubusercontent.com/111295065/207309475-759e6e8d-8265-4c49-8c8f-9f83478c329d.png](https://user-images.githubusercontent.com/111295065/207309475-759e6e8d-8265-4c49-8c8f-9f83478c329d.png)

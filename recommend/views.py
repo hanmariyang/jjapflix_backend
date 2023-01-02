@@ -22,6 +22,7 @@ class TasteView(APIView): # 영화 추천 View
     def get(self, request, movie_id):
         movie_id_list = item_based_collab[movie_id].sort_values(ascending=False)[1:21]
         movie_id_list = [x for x in movie_id_list.keys()]
+    
         movies = Movie.objects.filter(movie_id__in=movie_id_list)
         serializer = MovieSerializer(movies, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
